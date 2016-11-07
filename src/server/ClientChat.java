@@ -12,7 +12,7 @@ public class ClientChat implements Runnable {
 	private String ip;
 	private int port;
 
-	public ClienteChat(String ip, int port) {
+	public ClientChat(String ip, int port) {
 		this.ip = ip;
 		this.port = port;
 	}

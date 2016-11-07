@@ -29,14 +29,13 @@ public class StartChat {
 
 	}
 
-	public static void main(String[] args) {
-      
+	public static void main(String[] args) { 
 		loadProperties();
 		ServerChat sc = new ServerChat(portServer, name);
 		Thread threadServer = new Thread(sc);
 		threadServer.start();
 
-		ClienteChat cc = new ClienteChat(ip,portclient);
+		ClientChat cc = new ClientChat(ip,portclient);
 		Thread threadCliente = new Thread(cc);
 		threadCliente.start();
 	}
