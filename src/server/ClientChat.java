@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class ClienteChat implements Runnable {
+public class ClientChat implements Runnable {
 
 	private String ip;
 	private int port;
@@ -19,7 +19,7 @@ public class ClienteChat implements Runnable {
 
 	public void enviarMensagem() throws UnknownHostException, IOException {
 		Socket cliente = new Socket(ip,port);
-		System.out.println("Conex„o Estabelecida como: "+ ip);
+		System.out.println("Conex√£o Estabelecida como: "+ ip);
 		
 		Scanner mensagemParaEnvio = new Scanner(System.in);
 		PrintStream saida = new PrintStream(cliente.getOutputStream());
